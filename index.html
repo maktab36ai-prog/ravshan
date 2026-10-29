@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Matyoqubov Ravshanbek — Ekologiya koordinatori nomzodi</title>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#eef3ef;--surface:#fff;--ink:#12301f;--muted:#4b6455;--accent:#1b7f93;--coin:#e0a526;--line:#cfdcd2;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0e1a13;--surface:#16271c;--ink:#e6f1e9;--muted:#9bb5a4;--accent:#4cc3d9;--coin:#f0bf4a;--line:#27402f}}
+:root[data-theme="dark"]{--bg:#0e1a13;--surface:#16271c;--ink:#e6f1e9;--muted:#9bb5a4;--accent:#4cc3d9;--coin:#f0bf4a;--line:#27402f}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.0625rem/1.65 "Source Sans 3",system-ui,sans-serif}
+h1,h2,h3{font-family:"Bricolage Grotesque","Segoe UI",system-ui,sans-serif;line-height:1.1;margin:0}
+main{max-width:60rem;margin:0 auto;padding:0 1.25rem}
+section{padding:3.5rem 0;border-top:1px solid var(--line)}
+section:first-child{border-top:0}
+h2{font-size:clamp(1.7rem,4vw,2.4rem);font-weight:700;margin-bottom:1rem}
+p{max-width:62ch;margin:0 0 1rem}
+.hero{padding-top:3rem}
+.hero h1{font-size:clamp(2.4rem,8vw,4.8rem);font-weight:800;letter-spacing:-.02em}
+.hero .sub{font-size:1.2rem;color:var(--muted);margin-top:1rem}
+.calc{margin-top:2.5rem;background:var(--surface);border:2px solid var(--ink);border-radius:1.25rem;padding:1.5rem;display:grid;gap:1rem;max-width:34rem}
+.calc label{font-weight:600}
+.calc input[type=range]{width:100%;accent-color:var(--accent);height:2rem}
+.calc output{font:800 clamp(2rem,7vw,3rem)/1 "Bricolage Grotesque",sans-serif}
+.bottles{font-size:1.6rem;letter-spacing:.1em;min-height:2.2rem;word-break:break-all}
+.coin{color:var(--coin)}
+.steps{list-style:none;padding:0;margin:1.5rem 0 0;display:grid;gap:1rem;counter-reset:s}
+.steps li{counter-increment:s;display:grid;grid-template-columns:2.6rem 1fr;gap:1rem;align-items:start}
+.steps li::before{content:counter(s);width:2.6rem;height:2.6rem;border-radius:50%;background:var(--accent);color:#fff;display:grid;place-items:center;font:700 1.2rem "Bricolage Grotesque",sans-serif}
+.steps b{display:block;font-size:1.15rem}
+.plans{display:grid;gap:1rem;grid-template-columns:repeat(auto-fit,minmax(15rem,1fr));margin-top:1.5rem}
+.plans div{background:var(--surface);border-left:6px solid var(--accent);padding:1.1rem 1.25rem;border-radius:.4rem}
+.plans h3{font-size:1.2rem;margin-bottom:.4rem}
+.plans p{margin:0;color:var(--muted)}
+.facts{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:1.2rem}
+.facts span{background:var(--surface);border:1px solid var(--line);border-radius:2rem;padding:.35rem 1rem}
+footer{padding:2.5rem 0 3rem;border-top:1px solid var(--line);color:var(--muted)}
+a{color:var(--accent)}
+:focus-visible{outline:3px solid var(--coin);outline-offset:2px}
+</style>
+</head>
+<body>
+<main>
+<section class="hero">
+  <h1>Har bir butilka — toza Xorazm</h1>
+  <p class="sub">Men Matyoqubov Ravshanbek, Shovot tumanidan 16 yoshli ekolog. Xorazm viloyati ekologiya koordinatori lavozimiga nomzodimni qoʻyaman.</p>
+  <div class="calc" role="group" aria-labelledby="ct">
+    <label id="ct" for="n">Nechta plastik butilka yigʻildi?</label>
+    <input id="n" type="range" min="0" max="500" step="5" value="50">
+    <div class="bottles" id="b" aria-hidden="true"></div>
+    <output for="n" id="o"></output>
+  </div>
+</section>
+
+<section id="loyiha">
+  <h2>Loyiham: eko chiqindi qutisi</h2>
+  <p>Chiqindi qutisiga tashlangan har bir plastik butilka (balashka) uchun <b>100 soʻm</b> toʻlanadi. Koʻchada yotgan butilka endi pulga aylanadi, shuning uchun odamlar uni yerdan olib, qutiga tashlaydi.</p>
+  <ol class="steps">
+    <li><div><b>Butilkani yigʻ</b>Koʻcha, maktab yoki hovlidan plastik butilkalarni toʻplang.</div></li>
+    <li><div><b>Qutiga tashla</b>Butilkani eko chiqindi qutisiga soling.</div></li>
+    <li><div><b>100 soʻm ol</b>Har bir butilka uchun 100 soʻmdan hisoblanadi.</div></li>
+  </ol>
+</section>
+
+<section id="reja">
+  <h2>Koordinator boʻlsam, nima qilaman</h2>
+  <p>Loyihamni Shovotdan butun Xorazm viloyatiga tarqatmoqchiman.</p>
+  <div class="plans">
+    <div><h3>Qutilarni koʻpaytirish</h3><p>Maktab, bozor va bogʻlarga eko qutilar oʻrnatish.</p></div>
+    <div><h3>Yoshlarni jalb qilish</h3><p>Maktab va kollejlarda butilka yigʻish tanlovlari oʻtkazish.</p></div>
+    <div><h3>Natijani oshkor qilish</h3><p>Yigʻilgan butilka va toʻlangan pulni har oy eʼlon qilib borish.</p></div>
+  </div>
+</section>
+
+<section id="men">
+  <h2>Men haqimda</h2>
+  <p>Ismim Ravshanbek, 16 yoshdaman, Xorazm viloyati Shovot tumanida yashayman. Tabiat toza boʻlsa, odamlar ham yaxshi yashaydi, deb oʻylayman. Shuning uchun eko loyiha bilan shugʻullanaman.</p>
+  <div class="facts"><span>Matyoqubov Ravshanbek</span><span>16 yosh</span><span>Shovot tumani</span><span>Xorazm viloyati</span></div>
+</section>
+</main>
+<footer><main>Matyoqubov Ravshanbek · Shovot, Xorazm · Ekologiya koordinatori nomzodi</main></footer>
+<script>
+var n=document.getElementById('n'),o=document.getElementById('o'),b=document.getElementById('b');
+function up(){var v=+n.value;o.innerHTML=(v*100).toLocaleString('ru-RU')+' <span class="coin">soʻm</span>';
+b.textContent=v?'♻'.repeat(Math.min(Math.ceil(v/10),40)):'';}
+n.addEventListener('input',up);up();
+</script>
+</body>
+</html>
